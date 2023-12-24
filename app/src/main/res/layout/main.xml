@@ -1,0 +1,47 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerview1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="15dp"
+		android:background="#E3F2FD"
+		android:layout_weight="1" />
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingTop="8dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="15dp"
+		android:background="#B3E5FC"
+		android:orientation="horizontal">
+		<EditText
+			android:id="@+id/edittext1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:textSize="12sp"
+			android:textColor="#000000"
+			android:hint="prompt"
+			android:textColorHint="#607D8B"
+			android:layout_weight="1" />
+		<Button
+			android:id="@+id/button_submit"
+			android:layout_width="wrap_content"
+			android:layout_height="45dp"
+			android:padding="8dp"
+			android:text="Submit"
+			android:textSize="12sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</LinearLayout>
