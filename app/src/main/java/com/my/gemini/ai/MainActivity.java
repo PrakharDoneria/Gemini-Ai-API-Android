@@ -37,7 +37,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.*;
 import org.json.*;
-import com.google.gson.Gson;
+import com.google.gson.Gson;
+
 
 public class MainActivity extends AppCompatActivity {
 	
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 					        String jsonParams = gson.toJson(params);
 					
 					        // Replace "YOUR_API_KEY" with your actual API key
-					        String geminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAsiCAzg5jxOADEnXu33bLCpi6O0ILWJHE";
+					        String geminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=API-KEY-HERE";
 					
 					        Net.setHeaders(header);
 					        // Use setParams instead of setRequestBody
@@ -265,4 +266,4 @@ public class MainActivity extends AppCompatActivity {
 	public int getDisplayHeightPixels() {
 		return getResources().getDisplayMetrics().heightPixels;
 	}
-}
+}
